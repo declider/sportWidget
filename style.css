@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+
+html, body, * {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+body {
+    height: 600px;
+}
+
+#top-panel {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#top-panel * {
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    font-size: 1.4rem;
+    background-color: rgb(39, 39, 39);
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+
+#command1, #command2 {
+    white-space: nowrap;
+    width: 29vw;
+    font-size: 2.5rem;
+}
+
+#logo1, #logo2 {
+    aspect-ratio: 3/2;
+    padding: 0;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+#score1, #score2 {
+    width: 4.2vw;
+    font-size: 3rem;
+}
+
+#timer {
+    font-size: 3rem;
+    width: 8.4vw;
+    max-lines: 1;
+    cursor:text;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#timer:read-only {
+    cursor: pointer;
+}
+
+#settings {
+    position: fixed;
+    width: 100vw;
+    height: 410px;
+    max-height: 410px;
+    top: 110px;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    line-height: 1;
+    overflow: hidden;
+}
+
+#help {
+    position: fixed;
+    background-color: rgb(255, 123, 0);
+    top: 530px;
+    border-radius: 0;
+    font-size: 1.4rem;
+    padding: 2px;
+    height: 70px;
+    line-height: 35px;
+}
+
+.gsc-wrapper {
+    overflow-y: scroll;
+    max-height: 76vh;
+    zoom: 80%;
+}
+
+.gstl_50, .gsq_a {
+    color: black;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}

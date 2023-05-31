@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepega</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="top-panel">
+        <input type="text" id="command1" value="Команда 1">
+        <img id="logo1" ondragover="logoDragOver(event)" ondrop="logoDrop(event)" src="https://cdn.7tv.app/emote/640cbcfb5df4f1465c9a252f/4x.webp">
+        <input id="score1" type="number" value="0">
+        <input id="timer" type="text" value="00:00" onclick="startStopTimer()" ondblclick="startTimeEdit()" onblur="endTimeEdit()" readonly="true">
+        <input id="score2"type="number" value="0">
+        <img id="logo2" ondragover="logoDragOver(event)" ondrop="logoDrop(event)" src="https://i.ibb.co/tBN57R4/XlDqAsi.png">
+        <input id="command2" type="text" value="Команда 2">
+    </div>
+
+    <div id="settings">
+        <script async src="https://cse.google.com/cse.js?cx=94d20906509a148e3">
+        </script>
+        <div class="gcse-search" width="100%"></div>
+    </div>
+
+    <p id="help">
+        Добавь эту страницу как источник браузера в OBS с шириной в 1920 пикселей. ||
+        С зажатым ALT в обс обрежь всё вплоть до верхней строки с информацией о матче. ||
+        Найди картинки в панели выше и с зажатой ЛКМ на логотипы нужных команд. ||
+        Клик по таймеру - пуск/стоп, даблклик - редактирование.
+    </p>
+    <script src="script.js"></script>
+</body>
+</html>
