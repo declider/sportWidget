@@ -91,7 +91,7 @@ body {
 
 .gsc-wrapper {
     overflow-y: scroll;
-    max-height: 76vh;
+    max-height: 341px;
     zoom: 80%;
 }
 
