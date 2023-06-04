@@ -99,6 +99,10 @@ body {
     color: black;
 }
 
+.gsc-tabsArea {
+    visibility: hidden;
+}
+
 input[type='number']::-webkit-inner-spin-button {
     position: absolute;
     width: 20%;
