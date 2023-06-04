@@ -5,19 +5,25 @@ let backupTime = 0
 let timer = 0
 let started = false
 
-function logoDragOver(e) {
-    e.preventDefault()
-    return false
-}
 
-function logoDrop(e) {
-    e.preventDefault()
-    let link = e.dataTransfer.getData("text")
-    if(e.target.id=="logo1"||e.target.id=="logo2"){ 
-        e.target.src = link
+document.addEventListener("click", (event) => {
+    if (event.target.className == "gs-image gs-image-scalable") {
+        event.preventDefault()
+        document.getElementById("logo1").src = event.target.src
+
+        document.getElementsByClassName("gs-selectedImageResult")[0].classList.remove("gs-selectedImageResult")
+        document.getElementsByClassName("gs-imagePreviewArea")[0].className = "gs-imagePreviewArea-invisible"
     }
     return false
-}
+})
+
+document.addEventListener("contextmenu", (event) => {
+    if (event.target.className == "gs-image gs-image-scalable") {
+        event.preventDefault()
+        document.getElementById("logo2").src = event.target.src
+    }
+    return false
+})
 
 function strToTime() {
     try {
