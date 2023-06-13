@@ -99,7 +99,7 @@ body {
     color: black;
 }
 
-.gsc-tabsArea {
+.gs-imagePreviewArea, .gsc-tabsArea {
     visibility: hidden;
 }
 
